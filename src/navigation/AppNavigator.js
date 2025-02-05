@@ -43,3 +43,53 @@ const AppNavigator = () => (
 );
 
 export default AppNavigator;
+// import React from 'react';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import HomeScreen from '../screens/homeScreen/home';
+// import NotificationScreen from '../screens/notificationScreen/notification';
+// import Icon from 'react-native-vector-icons/FontAwesome';
+
+// const Tab = createBottomTabNavigator();
+
+// const TabNavigator = () => {
+//   return (
+//     <Tab.Navigator screenOptions={{ headerShown: false }}>
+//       <Tab.Screen
+//         name="Home"
+//         component={HomeScreen}
+//         options={{
+//           tabBarIcon: ({ color, size }) => <Icon name="home" color={color} size={size} />,
+//         }}
+//       />
+//       <Tab.Screen
+//         name="Notifications"
+//         component={NotificationScreen}
+//         options={{
+//           tabBarIcon: ({ color, size }) => <Icon name="bell" color={color} size={size} />,
+//         }}
+//       />
+//     </Tab.Navigator>
+//   );
+// };
+
+// export default TabNavigator;
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import SplashScreen from '../screens/splashScreen/splashScreen';
+// import LoginScreen from '../screens/loginScreen/loginScreen';
+// import TabNavigator from './TabNavigator';
+
+// const Stack = createNativeStackNavigator();
+
+// const AppNavigator = () => (
+//   <NavigationContainer>
+//     <Stack.Navigator initialRouteName="Splash">
+//       <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
+//       <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
+//       <Stack.Screen name="Main" component={TabNavigator} options={{ headerShown: false }} />
+//     </Stack.Navigator>
+//   </NavigationContainer>
+// );
+
+// export default AppNavigator;
